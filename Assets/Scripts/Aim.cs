@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Aim : MonoBehaviour
 {
-    public GameObject gun;
     public Animator animator;
 
     // Start is called before the first frame update
@@ -28,5 +27,5 @@ public class Aim : MonoBehaviour
             animator.ResetTrigger("AimTrigger");
             animator.SetTrigger("EndAimTrigger");
         }
-    }
+    }//0, -1.5, -1.5
 }
