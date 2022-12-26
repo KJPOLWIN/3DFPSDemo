@@ -18,14 +18,13 @@ public class Reload : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             animator.SetTrigger("Reload");
+            animator.ResetTrigger("EndReload");
         }
     }
 
-    public void AlertObservers(string message)
+    public void EndAnimation()
     {
-        if (message.Equals("ReloadEnded"))
-        {
-            animator.ResetTrigger("Reload");
-        }
+        animator.ResetTrigger("Reload");
+        animator.SetTrigger("EndReload");
     }
 }
