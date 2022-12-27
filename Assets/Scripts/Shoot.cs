@@ -22,7 +22,6 @@ public class Shoot : MonoBehaviour
             animator.SetTrigger("AimShoot");
             animator.ResetTrigger("EndIdleShoot");
             animator.ResetTrigger("EndAimShoot");
-            //Debug.Log("eee");
         }
         else
         {
